@@ -1,4 +1,4 @@
-スクリーンショットをBitbucketのリポジトリにアップロードする
+スクリーンショットをBitbucketのリポジトリにアップロードする　Macのみ
 
 ```bash
 $ composer install --no-dev
