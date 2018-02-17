@@ -1,0 +1,14 @@
+#! /usr/bin/env php
+<?php
+const APP_DIR = __DIR__ . '/../';
+
+require APP_DIR . 'vendor/autoload.php';
+
+/** @var \Aura\Cli_Kernel\CliKernel $kernel */
+$kernel = (new \Aura\Project_Kernel\Factory())->newKernel(
+    APP_DIR,
+    \Aura\Cli_Kernel\CliKernel::class
+);
+
+$status = $kernel();
+exit($status);
